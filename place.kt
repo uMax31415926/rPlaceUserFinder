@@ -57,7 +57,7 @@ fun main() {
 			val y = columns[3].dropLast(1).toIntOrNull()
 
 			if (x == null || y == null)
-				// skip first line and some malformed lines
+				// skip first line and moderation entries
 				return@forEachLine
 
 			for (i in areas.indices) {  // check each line for each area
